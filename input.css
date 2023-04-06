@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#dropDownMenu:hover {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fffd2d;
+  transition-duration: 300ms;
+}
+
+/* Social Media Sidebar */
+/* https://freefrontend.com/css-social-media-icons/ */
+a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .social {
+    position: fixed;
+    top: 10px;
+  }
+
+  .social ul {
+    padding: 0px;
+    transform: translate(-270px, 0);
+  }
+
+  .social ul li {
+    display: block;
+    background: #fffd2d;
+    width: 280px;
+    text-align: right;
+    padding: 8px;
+    margin: 40px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+  }
+
+  .social ul li:hover {
+    transform: translate(110px, 0);
+    background: #fffd2d;
+    opacity: 0.7;
+  }
+
+  #email_tag:hover {
+    transform: translate(200px, 0);
+    background: #fffd2d;
+    opacity: 0.7;
+  }
+
+  #phone_tag:hover {
+    transform: translate(130px, 0);
+    background: #fffd2d;
+    opacity: 0.7;
+  }
+
+  .social ul li:hover a {
+    color: #000;
+  }
+
+  .social ul li:hover i {
+    color: #4f6beb;
+    background: rgba(0, 0, 0, 0.2);
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
+
+  .social ul li i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+  }
+  
+ #about_us_text {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+ }
+
+ .outer {
+  margin: 0 50px;
+  color: aquamarine;
+ }
+
+/* Phone copy display */
+/* ChatGPT */
+.popup {
+  position: absolute;
+  padding: 1rem;
+  background-color: #fffd2d;
+  color: black;
+  border-radius: 0.5rem;
+  z-index: 50;
+}
+
+
+/* Services header */
+
+#underline {
+  position: relative;
+  text-decoration: none;
+}
+
+#underline::before {
+  position: absolute;
+  content: "";
+  /* visibility: hidden;
+  transform: scaleX(0);
+  transition: all .3s ease-in-out 0s; */
+}
+
+/* #underline:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+} */

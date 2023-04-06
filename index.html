@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Candey Cool Website</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <!-- from Animate.css -->
+    <!-- for animated text/headings -->
+    <!-- https://animate.style/ -->
+    <!-- for more animation  https://www.minimamente.com/project/magic/ -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
+
+    <style>
+      /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
+      /* html {
+        font-family: 'Poppins' , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      } */
+    </style>
+  </head>
+
+  <body class="w-full text-indigo-400 bg-cover bg-fixed" style="background-image: url('images/candey_bg.png');">
+    <div class="relative h-full">
+      
+      <!-- Social Media Sidebar -->
+      <nav class="social z-50">
+        <ul class="mt-52">
+          <li id="email_tag"><a href="mailto:neil@candeycool.co.za">neil@candeycool.co.za<i class="fa fa-envelope"></i></a></li>
+          <li id="phone_tag"><a href="">083 447 6897<i class="fa fa-phone"></i></a></li>
+          <li><a class="cursor-pointer" href="https://www.facebook.com/sharer/sharer.php?u=#">Facebook<i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/candey-cool">Linkedin <i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </nav>
+
+      <!-- intro section -->
+        <!-- header -->
+        <section class="">
+          <div id="background" class="">
+              <div class="overflow-hidden">
+                <!-- navbar -->
+                <!-- Fixed to the top and width of the full screen, background color is white-->
+                <nav class="w-screen bg-black/50 z-50">
+                    <!-- <img class="absolute w-screen h-full object-cover mix-blend-multiply filter blur-sm" src="images/under_hood.jpg"> -->
+                    <!-- Creates a horizontal margin on both left and right with responsiveness -->
+                    <!-- vertical padding (py - Y axis) -->
+                    <div class="container w-full mx-auto p-1 flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <img class="xl:w-36 xs:w-60 xs:ml-5" src="./images/Candey_Logo_Design_Final.png" alt="">
+                        </div>
+        
+                        <!--  Hides the links until we hit medium screen, some styling and then change all to uppercase -->
+                        <ul class="hidden md:flex text-center gap-10 ml-60 text-white font-bold text-sm uppercase">
+                            <li class="p-2 hover:text-base hover:text-custom_yellow duration-300">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="p-2 hover:text-base hover:text-custom_yellow duration-300">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="p-2 hover:text-base hover:text-custom_yellow duration-300">
+                                <a href="#services">Services</a>
+                            </li>
+                            <li class="p-2 hover:text-base hover:text-custom_yellow duration-300">
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        
+                        <!-- creating the hamburger menu dropdown -->
+                        <!-- id given for JS purposes -->
+                        <div class="hover:scale-125 ease-in-out duration-300">
+                            <div id="hamburger-menu" class="relative space-y-1 md:hidden cursor-pointer xs:ml-10 rounded-md p-1 z-50 bg-custom_yellow">
+                                <!-- actual lines of the hamburger dropdown menu -->
+                                <div class="w-6 h-0.5 bg-black"></div>
+                                <div class="w-6 h-0.5 bg-black"></div>
+                                <div class="w-6 h-0.5 bg-black"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- dropdown menu from hamburg menu created above -->
+                        <!-- rounded-b - only rounds the bottom -->
+                        <!-- id given for JS purposes -->
+                        <ul id="dropdown-menu" class="hidden bg-slate-700 absolute left-0 top-0 w-full p-10 rounded-b-2xl space-y-10 text-white text-center z-40">
+                            <li>
+                                <a id="dropDownMenu" class="" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a id="dropDownMenu" class="" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a id="dropDownMenu" class="" href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a id="dropDownMenu" class="" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </nav>
+              </div>
+          </div>
+      </section>
+
+      <!--Home-->
+      <section id="home" class="mx-auto m-24 pb-32 xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[70%] xs:[40%]">
+        <div class="group relative cursor-pointer items-center justify-center rounded-2xl overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 border-8 border-custom_yellow">
+          <div class="w-full">
+            <img id="home_image" class="w-full object-cover transition-transform duration-500 group-hover:scale-125" src="images/home_pic.jpg"/>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+          <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
+            <img class="xl:w-9/12 xs:w-60 xs:ml-5 mt-40" src="./images/Candey_Logo_Design_Final.png" alt="">
+          </div>
+        </div>
+      </section>
+      
+      <!-- About -->
+      <section id="about" class="mt-40">
+        <div class="relative w-full h-[50%] flex flex-wrap justify-center">
+          <!-- Left Side -->
+          <div class="flex flex-col justify-center items-center w-[45%] h-auto m-5 bg-slate-600/50 rounded-xl">
+            <div class="flex justify-center items-center w-full h-[20%]">
+              <h1 class="text-3xl font-semibold text-white">ABOUT US</h1>
+            </div>
+            <div class="w-full h-[80%]">
+              <p class="ml-16 mr-16 text-2xl text-white font-Mulish leading-relaxed text-left p-5">
+                Candey Cool is run by Neil Candey, A Qualified Automotive Diagnostic Technician with over 18 years experience 
+                in Auto Aircon services, Electrical & Diagnostics.
+              </p>
+              <p class="ml-16 mr-16 text-2xl text-white font-Mulish leading-relaxed text-left p-5">
+                We take pride in our commitment to quality and customer satisfaction, and we strive to provide our customers 
+                with the best possible experience when they shop with us. So whether you're looking to upgrade your vehicle's 
+                air conditioning system or need repairs for an existing one, we're here to help.
+              </p>
+            </div>
+          </div>
+         
+        <!-- Right Side -->
+        <!-- Pics Background -->
+        <div class="w-[50%] h-[80%]">
+
+          <div class="grid grid-rows-3 grid-flow-col p-4 gap-4">
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/about_pic.png" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] row-span-2  [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/under_hood2.jpg" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/aircon_button.jpg" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/air_compressor.jpg" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/black_dash.jpg" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/normal_dash.jpg" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="rounded-xl object-cover" src="images/home_pic.jpg" />
+              </div>
+            </div>
+            <div class="w-[100%] h-[100%] [perspective:1000px]">
+              <div class="rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <img class="h-48 rounded-xl object-cover" src="images/open_hood.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="mt-80 border-2 border-red-600">
+
+        <div class="w-full h-[50%] flex flex-wrap justify-center border-2 border-green-600">
+          <div class="p-5 w-3/5 top-20 flex flex-col items-center text-center rounded-xl z-10">
+            <a id="underline" href="" class="text-white text-4xl">Services</a>
+            <p class="text-white text-2xl">
+              Our team of highly educated and experienced specialists makes it our number one priority 
+              to provide innovative and customized solutions that are specifically created for each unique client. 
+              At Providence Software we offer the full package, from planning a solution to implementing, 
+              supporting and upgrading the solution as the latest software and technology arrives. We are a leading 
+              custom software, web, mobile, ERP, CRM & database development, BPO and resource recruitment company 
+              delivering world-class services to our clients. Our outsourcing services are driven by quality management 
+              and customer satisfaction.
+            </p>
+          </div>
+        </div>
+        
+        <!-- <div class="w-[100%] h-auto flex flex-col items-center justify-end border-2 border-blue-600">
+          <div class="flex w-[50%] flex-col justify-center mb-10">
+            <div class="m-1 w-full flex gap-5">
+              <p class="text-custom_yellow font-semibold text-xl">1.</p>
+              <p class="text-lg text-left font-medium text-gray-50">Commercial Automotive Aircon Service for: Cars, Trucks, Reach Stackers & Earthmoving Vehicles</p>
+            </div>
+            <div class="m-1 w-full flex gap-5">
+                <p class="text-custom_yellow font-semibold text-xl">2.</p>
+                <p class="text-lg text-left font-medium text-gray-50">Registered for all GOVERNMENT-OWNED vehicles</p>  
+            </div>
+            <div class="m-1 w-full flex items-center gap-5">
+              <p class="text-custom_yellow font-semibold text-xl">3.</p>
+              <p class="text-lg text-left font-medium text-gray-50">Specialist in VW and Audi</p>   
+            </div>
+            <div class="m-1 w-full flex items-center gap-5">
+              <p class="text-custom_yellow font-semibold text-xl">4.</p>
+              <p class="text-lg text-left font-medium text-gray-50">Car Diagnostic Testing</p>  
+            </div>
+            <div class="m-1 w-full flex items-center gap-5">
+              <p class="text-custom_yellow font-semibold text-xl">5.</p>
+              <p class="text-lg text-left font-medium text-gray-50">Durban based Mobile Service</p>  
+            </div>
+          </div>
+        </div> -->
+        <div class="w-[100%] h-[50%] flex justify-center gap-20 border-2 border-yellow-600">
+          <img class="w-[20%] h-[30%]" src="images/services_bottom_pic.png" alt="">
+          <img class="w-[20%] h-[30%]" src="images/services_top_pic.jpg" alt="">
+          <img class="w-[20%] h-[30%]" src="images/excavator.jpg" alt="">
+        </div>
+      </section>
+
+
+
+
+
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+          <!-- <a class="text-gray-500 no-underline hover:no-underline" href="#">&copy; App 2020</a>
+          - Template by
+          <a class="text-gray-500 no-underline hover:no-underline" href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a> -->
+              <!-- Social Media Icon -->
+          <!-- <div class="flex w-1/2 justify-center items-center gap-20">
+            <a id="linkedin" class="fa fa-linkedin text-blue-300 text-3xl p-3 hover:text-custom_yellow text-center transform hover:scale-125 duration-300 ease-in-out" href="https://www.linkedin.com/company/candey-cool/"></a>
+            <a id="facebook" class="fa fa-facebook text-blue-300 text-3xl p-3 hover:text-custom_yellow text-center transform hover:scale-125 duration-300 ease-in-out" href="https://www.facebook.com/sharer/sharer.php?u=#"></a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+	  <script src="app.js" defer></script>
+  </body>
+</html>
+
+
+
+
+
+
+<!-- animated shapes -->
+          <!-- https://www.youtube.com/watch?v=Tmkr2kKUEgU&t=324s -->
+          <!-- <div class="relative w-full flex z-0">
+              mix-blend-multiply allows the colours to plend when overlaping
+              <div class="absolute top-0 left-[25%] w-96 h-96 bg-indigo-400 dark:bg-gray-500 rounded-full filter blur-3xl mix-blend-multiply"></div>
+              <div class="absolute top-48 left-[15%] w-72 h-72 bg-indigo-300 dark:bg-gray-500 rounded-full filter blur-3xl mix-blend-multiply"></div>
+
+              <div class="absolute top-40 right-[25%] w-72 h-72 bg-pink-400 dark:bg-gray-400 rounded-full filter blur-3xl mix-blend-multiply"></div>
+              <div class="absolute top-52 right-[2%] w-96 h-96 bg-cyan-700 dark:bg-gray-400 rounded-full filter blur-3xl mix-blend-multiply"></div>
+          </div> -->
