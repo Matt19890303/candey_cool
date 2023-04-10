@@ -3,12 +3,17 @@
 @tailwind utilities;
 
 
+/* #dropDownMenu {
+  font-weight:bold
+}
+
 #dropDownMenu:hover {
   font-size: 20px;
   line-height: 28px;
   color: #fffd2d;
   transition-duration: 300ms;
-}
+  cursor: pointer;
+} */
 
 /* Social Media Sidebar */
 /* https://freefrontend.com/css-social-media-icons/ */
@@ -145,8 +150,22 @@ a {
   z-index: 1;
 }
 
+#services_info img {
+  margin-top: 15px;
+}
 
+#services_info button {
+  padding: 5px;
+  background-color: #fffd2d;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
 
-
-/* Footer Social Icons */
-
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/* @media screen and (max-width: 1100px) {
+  #services_content_01 {
+    display: block;
+  }
+} */

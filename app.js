@@ -1,17 +1,13 @@
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 const dropdownMenu = document.querySelector('#dropdown-menu');
 const dropDownHidden = document.querySelectorAll('#dropDownMenu');
-const downloadCVbtn = document.getElementById("downloadBTN");
 const body = document.querySelector("body");
 
 
 // Hamburger menu
 hamburgerMenu.addEventListener("click", ()=> {
     dropdownMenu.classList.toggle("hidden");
-    // hamburgerMenu.classList.toggle('bg-blue');
-    downloadCVbtn.classList.toggle("hidden");
 });
-
 
 // to hide dropdown menu after clicking one of the options
 dropDownHidden.forEach(Link=>{
@@ -23,8 +19,12 @@ dropDownHidden.forEach(Link=>{
 });
 
 
+
 // ChatGPT
 // Clicked number and copied
+
+// Need to add this to the contact button on the footer 
+
 const phoneNumber = document.getElementById('phone_tag');
 
 // Add a click event listener to the element
@@ -55,7 +55,74 @@ phoneNumber.addEventListener('click', (event) => {
 });
 
 
+// hide and display text in the services section
+// card01
+const servicesText01 = document.querySelector("#services_content_01");
+const readMore01 = document.querySelector('#read_more_btn_01');
+const showLess01 = document.querySelector('#show_less_btn_01');
 
+readMore01.addEventListener("click", ()=> {
+  servicesText01.classList.toggle("hidden");
+  readMore01.classList.toggle('hidden');
+  showLess01.classList.toggle('hidden');
+});
+
+showLess01.addEventListener("click", ()=> {
+  servicesText01.classList.toggle("hidden");
+  showLess01.classList.toggle('hidden');
+  readMore01.classList.toggle('hidden');
+});
+
+// card02
+const servicesText02 = document.querySelector("#services_content_02");
+const readMore02 = document.querySelector('#read_more_btn_02');
+const showLess02 = document.querySelector('#show_less_btn_02');
+
+readMore02.addEventListener("click", ()=> {
+  servicesText02.classList.toggle("hidden");
+  readMore02.classList.toggle('hidden');
+  showLess02.classList.toggle('hidden');
+});
+
+showLess02.addEventListener("click", ()=> {
+  servicesText02.classList.toggle("hidden");
+  showLess02.classList.toggle('hidden');
+  readMore02.classList.toggle('hidden');
+});
+
+// card03
+const servicesText03 = document.querySelector("#services_content_03");
+const readMore03 = document.querySelector('#read_more_btn_03');
+const showLess03 = document.querySelector('#show_less_btn_03');
+
+readMore03.addEventListener("click", ()=> {
+  servicesText03.classList.toggle("hidden");
+  readMore03.classList.toggle('hidden');
+  showLess03.classList.toggle('hidden');
+});
+
+showLess03.addEventListener("click", ()=> {
+  servicesText03.classList.toggle("hidden");
+  showLess03.classList.toggle('hidden');
+  readMore03.classList.toggle('hidden');
+});
+
+// card04
+const servicesText04 = document.querySelector("#services_content_04");
+const readMore04 = document.querySelector('#read_more_btn_04');
+const showLess04 = document.querySelector('#show_less_btn_04');
+
+readMore04.addEventListener("click", ()=> {
+  servicesText04.classList.toggle("hidden");
+  readMore04.classList.toggle('hidden');
+  showLess04.classList.toggle('hidden');
+});
+
+showLess04.addEventListener("click", ()=> {
+  servicesText04.classList.toggle("hidden");
+  showLess04.classList.toggle('hidden');
+  readMore04.classList.toggle('hidden');
+});
 
 // Contact Form
 // ChatGPT

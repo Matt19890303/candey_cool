@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       
-      width: {
-        'custom': '384px',
-      },
+      // width: {
+      //   'custom': '384px',
+      // },
 
       colors: {
         custom_yellow: '#fffd2d',
@@ -51,10 +51,10 @@ module.exports = {
       }
     },
     screens: {
-      xs: "300px",
+      xs:"300px",
       sm:"480px",
       md:"760px",
-      lg:"1024px",
+      lg:"1100px",
       xl:"1280px",
     },
     fontFamily: {
