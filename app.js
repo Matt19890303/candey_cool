@@ -160,3 +160,19 @@ showLess04.addEventListener("click", ()=> {
   readMore04.classList.toggle('hidden');
 });
 
+// Scrolling Animation
+// https://www.youtube.com/watch?v=T33NN_pPeNI&t=16s
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('#hidden');
+hiddenElements.forEach((el) => observer.observe(el));

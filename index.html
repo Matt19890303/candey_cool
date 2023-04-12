@@ -7,6 +7,9 @@
     <title>Candey Cool Website</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <!-- AOS Animation -->
+    <!-- https://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
@@ -18,7 +21,8 @@
 
   <body class="w-screen h-screen font-Mulish text-indigo-400 bg-cover bg-fixed" style="background-image: url('images/candey_bg.png');">
     <div class="relative w-screen h-screen">
-      
+  
+  <!-- <body> -->
       <!-- Social Media Sidebar -->
       <nav class="social z-50 hidden lg:block">
         <ul class="mt-52">
@@ -31,7 +35,7 @@
 
       <!-- intro section -->
       <!-- header -->
-      <section class="">
+      <section id="hidden" class="">
         <div class="overflow-hidden ">
           <!-- navbar -->
           <!-- Fixed to the top and width of the full screen, background color is white-->
@@ -68,11 +72,19 @@
               <!-- dropdown menu from hamburg menu created above -->
               <!-- rounded-b - only rounds the bottom -->
               <!-- id given for JS purposes -->
-              <div id="dropdown-menu" class="hidden bg-slate-700 absolute left-0 top-0 w-full p-10 rounded-b-2xl space-y-10 text-white text-center z-40">
-                <a href="#" class="text-lg hover:text-custom_yellow duration-300">HOME</a>
-                <div><a id="dropDownMenu" class="" href="#about">ABOUT</a></div>
-                <div><a id="dropDownMenu" class="" href="#services">SERVICES</a></div>
-                <div><a id="dropDownMenu" class="" href="#footer">CONTACT</a></div>
+              <div id="dropdown-menu" class="hidden md:hidden bg-slate-700 absolute left-0 top-0 w-full p-10 rounded-b-2xl space-y-10 text-white text-center z-40">
+                <div>
+                  <a href="#" class="text-lg hover:text-custom_yellow duration-300">HOME</a>
+                </div>
+                <div>
+                  <a href="#about" class="text-lg hover:text-custom_yellow duration-300">ABOUT</a>
+                </div>
+                <div>
+                  <a href="#services" class="text-lg hover:text-custom_yellow duration-300">SERVICES</a>
+                </div>
+                <div>
+                  <a href="#footer" class="text-lg hover:text-custom_yellow duration-300">CONTACT</a>
+                </div>
               </div>
             </div>
           </nav>
@@ -80,8 +92,8 @@
       </section>
 
       <!--Home-->
-      <section id="home" class="mx-auto m-24 xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[70%] xs:[40%]">
-        <div class="group relative cursor-pointer items-center justify-center rounded-2xl overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 border-8 border-custom_yellow">
+      <section id="hidden" class="mx-auto m-24 xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[70%] xs:[40%]">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="home" class="group relative cursor-pointer items-center justify-center rounded-2xl overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 border-8 border-custom_yellow">
           <div class="w-full">
             <img id="home_image" class="w-full object-cover transition-transform duration-500 group-hover:scale-125" src="images/home_pic.jpg"/>
           </div>
@@ -93,8 +105,8 @@
       </section>
 
       <!-- About -->
-      <section id="about" class="xl:mt-80 xs:mt-40">
-        <div class="relative w-full h-[80%] flex flex-wrap justify-center">
+      <section id="hidden" class="xl:mt-80 xs:mt-40">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="about" class="relative w-full h-[80%] flex flex-wrap justify-center">
           <!-- Left Side -->
           <div class="flex flex-col justify-center items-center xl:w-[45%] xl:h-auto lg:w-[80%] lg:h-fit md:w-[80%] md:h-fit sm:w-[80%] sm:h-fit xs:w-[80%] xs:h-fit m-5 p-5 xs:p-2 bg-slate-600/50 rounded-xl">
             <div class="flex justify-center items-center w-full h-[20%]">
@@ -164,8 +176,8 @@
       </section>
 
       <!-- Services -->
-      <section id="services" class="xl:mt-80 xs:mt-40">
-        <div class="w-full h-[50%] flex flex-wrap justify-center">
+      <section id="hidden" class="xl:mt-80 xs:mt-40">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="services" class="w-full h-[50%] flex flex-wrap justify-center">
 
           <!-- Top -->
           <div class="flex justify-center bg-slate-600/50">
@@ -237,10 +249,10 @@
       </section>
 
       <!--Footer-->
-      <section id="footer" class="xl:mt-80 xs:mt-40 bg-[#1E2228] pt-10 pb-10">
+      <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="hidden" class="xl:mt-80 xs:mt-40 bg-[#1E2228] pt-10 pb-10">
 
         <!-- Top -->
-        <div class="flex xl:flex-row justify-center items-center xl:gap-28 lg:flex-row lg:gap-28 md:flex-row md:gap-10 sm:flex-col sm:gap-10 xs:flex-col xs:gap-0">
+        <div id="footer" class="flex xl:flex-row justify-center items-center xl:gap-28 lg:flex-row lg:gap-28 md:flex-row md:gap-10 sm:flex-col sm:gap-10 xs:flex-col xs:gap-0">
           <!-- Left -->
           <!-- Logo -->
           <div class="hidden lg:block w-[15%] h-24 flex justify-center pl-5 pr-5">
@@ -291,12 +303,9 @@
         </div>
       </section>
 
-      <section class="test">
-        <!-- <div class="nav-links">Nav links</div>
-        <button class="nav-btn">Toggle the nav!</button> -->
-      </section>
-          
     </div>
 	  <script src="app.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

@@ -2,18 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* #dropDownMenu {
-  font-weight:bold
+/* smooth scrolling when using nav bar to move between sections */
+html {
+  scroll-behavior: smooth;
 }
 
-#dropDownMenu:hover {
-  font-size: 20px;
-  line-height: 28px;
-  color: #fffd2d;
-  transition-duration: 300ms;
-  cursor: pointer;
-} */
+
 
 /* Social Media Sidebar */
 /* https://freefrontend.com/css-social-media-icons/ */

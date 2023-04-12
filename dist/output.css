@@ -1056,17 +1056,11 @@ video {
   transform-style: preserve-3d;
 }
 
-/* #dropDownMenu {
-  font-weight:bold
-}
+/* smooth scrolling when using nav bar to move between sections */
 
-#dropDownMenu:hover {
-  font-size: 20px;
-  line-height: 28px;
-  color: #fffd2d;
-  transition-duration: 300ms;
-  cursor: pointer;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 /* Social Media Sidebar */
 
@@ -1301,10 +1295,6 @@ a {
 
   .xs\:mr-5 {
     margin-right: 1.25rem;
-  }
-
-  .xs\:block {
-    display: block;
   }
 
   .xs\:h-fit {
