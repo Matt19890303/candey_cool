@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* smooth scrolling when using nav bar to move between sections */
-html {
-  scroll-behavior: smooth;
-}
-
-
 
 /* Social Media Sidebar */
 /* https://freefrontend.com/css-social-media-icons/ */
