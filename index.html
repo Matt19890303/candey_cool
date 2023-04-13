@@ -45,17 +45,17 @@
                   <img class="xl:w-40 xl:ml-32 lg:w-40 lg:ml-32 md:w-40 md:ml-16 sm:w-60 sm:ml-10 w-60 ml-5 mr-40 flex justify-between" src="./images/Candey_Logo_Design_Final.png" alt="">
               </div>
               <!--  Hides the links until we hit medium screen, some styling and then change all to uppercase -->
-              <ul class="hidden xl:text-lg md:flex text-center xl:gap-20 lg:gap-10 md:gap-10 sm:gap-5 xl:ml-80 lg:ml-72 md:ml-24 text-white font-bold hover:text-custom_yellow duration-300">
-                  <li class="p-2 hover:text-xl">
+              <ul class="hidden xl:text-base md:flex text-center xl:gap-20 lg:gap-10 md:gap-10 sm:gap-5 xl:ml-80 lg:ml-72 md:ml-24 text-white font-bold hover:text-custom_yellow duration-300">
+                  <li class="p-2 hover:text-lg">
                       <a class="hover:text-custom_yellow duration-300" href="#">HOME</a>
                   </li>
-                  <li class="p-2 hover:text-xl">
+                  <li class="p-2 hover:text-lg">
                       <a class="hover:text-custom_yellow duration-300" href="#about">ABOUT</a>
                   </li>
-                  <li class="p-2 hover:text-xl">
+                  <li class="p-2 hover:text-lg">
                       <a class="hover:text-custom_yellow duration-300" href="#services">SERVICES</a>
                   </li>
-                  <li class="p-2 hover:text-xl">
+                  <li class="p-2 hover:text-lg">
                       <a class="hover:text-custom_yellow duration-300" href="#footer">CONTACT</a>
                   </li>
               </ul>
@@ -74,16 +74,16 @@
               <!-- id given for JS purposes -->
               <div id="dropdown-menu" class="hidden md:hidden bg-slate-700 absolute left-0 top-0 w-full p-10 rounded-b-2xl space-y-10 text-white text-center z-40">
                 <div>
-                  <a href="#" class="text-lg hover:text-custom_yellow duration-300">HOME</a>
+                  <a id="dropDownMenu" href="#" class="text-base hover:text-custom_yellow duration-300">HOME</a>
                 </div>
                 <div>
-                  <a href="#about" class="text-lg hover:text-custom_yellow duration-300">ABOUT</a>
+                  <a id="dropDownMenu" href="#about" class="text-base hover:text-custom_yellow duration-300">ABOUT</a>
                 </div>
                 <div>
-                  <a href="#services" class="text-lg hover:text-custom_yellow duration-300">SERVICES</a>
+                  <a id="dropDownMenu" href="#services" class="text-base hover:text-custom_yellow duration-300">SERVICES</a>
                 </div>
                 <div>
-                  <a href="#footer" class="text-lg hover:text-custom_yellow duration-300">CONTACT</a>
+                  <a id="dropDownMenu" href="#footer" class="text-base hover:text-custom_yellow duration-300">CONTACT</a>
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@
 
       <!-- About -->
       <section id="hidden" class="xl:mt-80 xs:mt-40">
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="about" class="relative w-full h-[80%] flex flex-wrap justify-center">
+        <div data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" id="about" class="relative w-full h-[80%] flex flex-wrap justify-center">
           <!-- Left Side -->
           <div class="flex flex-col justify-center items-center xl:w-[45%] xl:h-auto lg:w-[80%] lg:h-fit md:w-[80%] md:h-fit sm:w-[80%] sm:h-fit xs:w-[80%] xs:h-fit m-5 p-5 xs:p-2 bg-slate-600/50 rounded-xl">
             <div class="flex justify-center items-center w-full h-[20%]">
@@ -177,7 +177,7 @@
 
       <!-- Services -->
       <section id="hidden" class="xl:mt-80 xs:mt-40">
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="services" class="w-full h-[50%] flex flex-wrap justify-center">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" id="services" class="w-full h-[50%] flex flex-wrap justify-center">
 
           <!-- Top -->
           <div class="flex justify-center bg-slate-600/50">
@@ -232,7 +232,7 @@
               <button id="show_less_btn_03" class="hidden">Show Less</button>
             </div>
             <div id="card" class="w-[100%] flex flex-col items-center">
-              <img class="w-60 h-60" src="images/coolant_refill.jpeg" alt="">
+              <img class="w-60 h-60" src="images/coolant.jpeg" alt="">
               <h1 class="w-3/4 flex justify-center text-2xl text-white text-center uppercase pt-5 pb-5 ">Coolant refill</h1>
               <p id="services_content_04" class="w-4/5 text-center text-xl text-white leading-relaxed p-2 hidden md:block">
                 If your air conditioner is not blowing cold air, it may be 
@@ -249,13 +249,13 @@
       </section>
 
       <!--Footer-->
-      <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" id="hidden" class="xl:mt-80 xs:mt-40 bg-[#1E2228] pt-10 pb-10">
+      <section data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine" id="hidden" class="xl:mt-80 xs:mt-40 bg-[#1E2228] pt-10 pb-10">
 
         <!-- Top -->
         <div id="footer" class="flex xl:flex-row justify-center items-center xl:gap-28 lg:flex-row lg:gap-28 md:flex-row md:gap-10 sm:flex-col sm:gap-10 xs:flex-col xs:gap-0">
           <!-- Left -->
           <!-- Logo -->
-          <div class="hidden lg:block w-[15%] h-24 flex justify-center pl-5 pr-5">
+          <div class="hidden lg:block w-1/6 h-24 flex justify-center pl-5 pr-5">
             <a href="#" class="hover:scale-90 duration-300"><img class="xl:w-56 xl:h-28 xs:w-60 xs:ml-5" src="./images/Candey_Logo_Design_Final.png" alt=""></a>
           </div>
           <!-- Middle -->
@@ -275,6 +275,10 @@
                   </div>
                   <div id="footer_circle" class="w-10 h-10 flex justify-center items-center bg-white rounded-full hover:bg-slate-600/50 duration-300">
                       <a href="https://www.facebook.com/Candeycool" class="fa fa-facebook text-[#255C9D] text-2xl hover:text-custom_yellow duration-300" id="facebook"></a>
+                  </div>
+                  <div id="footer_circle" class="w-10 h-10 flex justify-center items-center bg-white rounded-full hover:bg-slate-600/50 duration-300">
+                    <a href="https://api.whatsapp.com/send?phone=083 447 6897" class="fa fa-whatsapp text-green-500 text-4xl hover:text-custom_yellow duration-300">
+                    </a>
                   </div>
                 </div>
               </div>
