@@ -653,10 +653,6 @@ video {
   height: 2.5rem;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .w-screen {
   width: 100vw;
 }
@@ -701,8 +697,8 @@ video {
   width: 91.666667%;
 }
 
-.w-\[15\%\] {
-  width: 15%;
+.w-1\/6 {
+  width: 16.666667%;
 }
 
 .w-fit {
@@ -712,14 +708,6 @@ video {
 
 .w-10 {
   width: 2.5rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
 }
 
 .translate-y-\[60\%\] {
@@ -807,10 +795,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -861,11 +845,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-green-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -929,16 +908,6 @@ video {
   padding-right: 2.25rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -979,9 +948,14 @@ video {
   font-family: Mulish, sans-serif;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-2xl {
@@ -994,19 +968,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1107,18 +1076,13 @@ video {
   transform-style: preserve-3d;
 }
 
-/* smooth scrolling when using nav bar to move between sections */
-
-html {
-  scroll-behavior: smooth;
-}
-
 /* Social Media Sidebar */
 
 /* https://freefrontend.com/css-social-media-icons/ */
 
-a {
-  color: #fff;
+.social a {
+  font-size: 15px;
+  color: #fffd2d;
   text-decoration: none;
 }
 
@@ -1128,7 +1092,7 @@ a {
 }
 
 .social ul {
-  padding: 0px;
+  /* padding: 0px; */
   transform: translate(-270px, 0);
 }
 
@@ -1137,26 +1101,26 @@ a {
   background: #fffd2d;
   width: 280px;
   text-align: right;
-  padding: 8px;
+  padding: 5px;
   margin: 40px;
   border-radius: 0 30px 30px 0;
   transition: all 1s;
 }
 
 .social ul li:hover {
-  transform: translate(110px, 0);
+  transform: translate(80px, 0);
   background: #fffd2d;
   /* opacity: 0.7; */
 }
 
 #email_tag:hover {
-  transform: translate(200px, 0);
+  transform: translate(170px, 0);
   background: #fffd2d;
   /* opacity: 0.7; */
 }
 
 #phone_tag:hover {
-  transform: translate(130px, 0);
+  transform: translate(110px, 0);
   background: #fffd2d;
   /* opacity: 0.7; */
 }
@@ -1176,11 +1140,11 @@ a {
   margin-left: 10px;
   color: #000;
   background: #fff;
-  padding: 10px;
+  padding: 8px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
   background: #ffffff;
   transform: rotate(0deg);
 }
@@ -1284,24 +1248,14 @@ a {
   background-color: rgb(71 85 105 / 0.5);
 }
 
-.hover\:bg-green-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-
-.hover\:text-xl:hover {
-  font-size: 1.25rem;
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
 .hover\:text-base:hover {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.hover\:text-lg:hover {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .hover\:text-custom_yellow:hover {
@@ -1400,6 +1354,11 @@ a {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1439,6 +1398,11 @@ a {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1510,9 +1474,19 @@ a {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .lg\:ml-32 {
     margin-left: 8rem;
   }
@@ -1571,6 +1545,11 @@ a {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1663,11 +1642,6 @@ a {
     padding: 1.25rem;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1676,6 +1650,16 @@ a {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .xl\:text-base {
