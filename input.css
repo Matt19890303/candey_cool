@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Social Media Sidebar */
 /* https://freefrontend.com/css-social-media-icons/ */
 .social a {
