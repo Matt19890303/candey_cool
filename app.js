@@ -1,3 +1,4 @@
+
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 const dropdownMenu = document.querySelector('#dropdown-menu');
 const dropDownHidden = document.querySelectorAll('#dropDownMenu');
@@ -54,10 +55,6 @@ phoneNumber.addEventListener('click', (event) => {
   }, 1000);
 });
 
-
-// ChatGPT
-// Clicked number and copied
-// footer contact number
 
 const footerPhoneNumber = document.getElementById('footer_phone_tag');
 
@@ -160,19 +157,53 @@ showLess04.addEventListener("click", ()=> {
   readMore04.classList.toggle('hidden');
 });
 
-// Scrolling Animation
-// https://www.youtube.com/watch?v=T33NN_pPeNI&t=16s
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  });
-});
+// Contact Form
+// ChatGPT
+// https://www.youtube.com/watch?v=dgcYOm8n8ME
+// https://www.emailjs.com/
 
-const hiddenElements = document.querySelectorAll('#hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+const booking_form = document.getElementById('myform');
+
+booking_form.addEventListener('submit', function(event) {
+    // Prevent the form from submitting
+    event.preventDefault();
+    // Add validation code here
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('form_contact_number');
+    const emailInput = document.getElementById('email');
+    const dateInput = document.getElementById('date_picker');
+    const messageInput = document.getElementById('message');
+
+
+    if (nameInput.value === '' || phoneInput.value === '' || emailInput.value === '' || dateInput.value === '' || messageInput.value === '') {
+        alert('Please fill in all fields');
+        return;
+        }
+
+        var params = {
+            name: document.getElementById("name").value,
+            phone_number: document.getElementById("form_contact_number").value,
+            email: document.getElementById("email").value,
+            date_picker: document.getElementById("date_picker").value,
+            message: document.getElementById("message").value,
+        };
+        
+        const serviceID = "service_rgvsdep";
+        const templateID = "template_9finfik";
+
+        emailjs
+            .send(serviceID, templateID, params)
+            .then(res=>{
+            document.getElementById("name").value = "";
+            document.getElementById("form_contact_number").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("date_picker").value = "";
+            document.getElementById("message").value = "";
+            //   console.log(res);
+            alert("Your message sent successfully!!")
+        })
+        .catch(err=>console.log(err));
+
+    });
+

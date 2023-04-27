@@ -156,9 +156,7 @@ html {
   margin-bottom: 15px;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 760px) {
-  #read_more_btn_01, #read_more_btn_02, #read_more_btn_03, #read_more_btn_04 {
-    
-  }
+
+#contact-btn {
+  background-color: rgb(17 94 89);
 }

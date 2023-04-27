@@ -10,6 +10,9 @@
     <!-- AOS Animation -->
     <!-- https://michalsnik.github.io/aos/ -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- EmailJS.com -->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function(){emailjs.init("_nRJCPGz_99s1Vm07");})();</script>
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
@@ -38,13 +41,13 @@
         <div class="overflow-hidden ">
           <!-- navbar -->
           <!-- Fixed to the top and width of the full screen, background color is white-->
-          <nav class="w-full bg-black/50 z-50">
-            <div class="w-full mx-auto p-1 xs:gap-32 flex items-center xl:justify-between">
-              <div class="flex items-center gap-2">
-                  <img class="xl:w-40 xl:ml-32 lg:w-40 lg:ml-32 md:w-40 md:ml-16 sm:w-60 sm:ml-10 w-60 ml-5 mr-40 flex justify-between" src="./images/Candey_Logo_Design_Final.png" alt="">
+          <nav class="max-w-full flex bg-black/50 z-50">
+            <div class="w-full mx-auto p-1 xs:gap-32 flex items-center xl:justify-around md:justify-center">
+              <div class="">
+                  <img class="xl:w-40 xl:ml-32 lg:w-40 lg:ml-32 md:w-40 md:ml-32 sm:w-60 sm:ml-10 w-60 ml-5 mr-40 flex justify-between" src="./images/Candey_Logo_Design_Final.png" alt="">
               </div>
               <!--  Hides the links until we hit medium screen, some styling and then change all to uppercase -->
-              <ul class="hidden text-sm md:flex text-center xl:gap-20 lg:gap-10 md:gap-10 sm:gap-5 xl:ml-80 lg:ml-72 md:ml-24 text-white">
+              <ul class="hidden text-sm md:flex text-center xl:gap-20 lg:gap-5 md:gap-5 sm:gap-5 xl:ml-80 lg:ml-72 md:ml-24 text-white">
                   <li class="p-2 hover:text-base">
                       <a class="hover:text-custom_yellow duration-300" href="#">HOME</a>
                   </li>
@@ -54,6 +57,9 @@
                   <li class="p-2 hover:text-base">
                       <a class="hover:text-custom_yellow duration-300" href="#services">SERVICES</a>
                   </li>
+                  <li class="p-2 hover:text-base">
+                    <a class="hover:text-custom_yellow duration-300" href="#booking">BOOKING</a>
+                </li>
                   <li class="p-2 hover:text-base">
                       <a class="hover:text-custom_yellow duration-300" href="#footer">CONTACT</a>
                   </li>
@@ -80,6 +86,9 @@
                 </div>
                 <div>
                   <a id="dropDownMenu" href="#services" class="text-base hover:text-custom_yellow duration-300">SERVICES</a>
+                </div>
+                <div>
+                  <a id="dropDownMenu" href="#footer" class="text-base hover:text-custom_yellow duration-300">BOOKING</a>
                 </div>
                 <div>
                   <a id="dropDownMenu" href="#footer" class="text-base hover:text-custom_yellow duration-300">CONTACT</a>
@@ -167,13 +176,13 @@
               </div>
 
               <div class="w-full h-full [perspective:1000px]">
-                <div class="w-full h-full aspect-w-1 overflow-hidden transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <div class="w-full h-full overflow-hidden transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
                   <img class="w-full h-full object-cover rounded-xl" src="images/aircon_button.jpg"/>
                 </div>
               </div>
 
               <div class="w-full h-full [perspective:1000px]">
-                <div class="w-full h-full aspect-w-1 overflow-hidden transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+                <div class="w-full h-full overflow-hidden transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
                   <img class="w-full h-full object-cover rounded-xl" src="images/excavator.jpg" />
                 </div>
               </div>
@@ -202,10 +211,10 @@
           </div>
 
           <!-- Bottom -->
-          <div id="services_info" class="w-[80%] h-[50%] mx-auto xl:grid xl:grid-cols-4 md:grid md:grid-cols-2 p-5">
+          <div id="services_info" class="w-[80%] h-[50%] mx-auto xl:grid xl:grid-cols-4 lg:gap-8 md:grid md:grid-cols-2 md:gap-5 p-5">
             <div id="card" class="xl:w-[100%] flex flex-col items-center hover:scale-95 ease-in-out duration-300">
-              <img class="w-60 h-60" src="images/aircon_parts2.jpeg" alt="">
-              <h1 class="w-3/4 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5">Air con repair</h1>
+              <img class="w-80 h-60 object-contain" src="images/aircon_repairs_neil.jpg" alt="">
+              <h1 class="w-3/4 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5">Aircon repair</h1>
               <p id="services_content_01" class="w-4/5 text-center text-base text-white leading-relaxed p-2 hidden md:block">
                 If you're experiencing problems with your air conditioner, 
                 we can diagnose and repair any issues quickly and effectively. 
@@ -217,8 +226,8 @@
               <button id="show_less_btn_01" class="hidden">Show Less</button>
             </div>
             <div id="card" class="w-[100%] flex flex-col items-center">
-              <img class="w-60 h-60" src="images/repair.jpg" alt="">
-              <h1 class="w-11/12 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5">Air con maintenance</h1>
+              <img class="w-80 h-60 object-cover" src="images/aircon_service_neil2.jpg" alt="">
+              <h1 class="w-11/12 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5">Aircon service</h1>
               <p id="services_content_02" class="w-4/5 text-center text-base text-white leading-relaxed p-2 hidden md:block">
                 Regular maintenance is necessary to keep your air conditioner 
                 running smoothly and to prevent breakdowns. Our maintenance 
@@ -229,7 +238,7 @@
               <button id="show_less_btn_02" class="hidden">Show Less</button>
             </div>
             <div id="card" class="w-[100%] flex flex-col items-center">
-              <img class="w-60 h-60" src="images/air_duct_cleaning.jpeg" alt="">
+              <img class="w-80 h-60 object-contain" src="images/duct_cleaning2.jpg" alt="">
               <h1 class="w-3/4 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5">Air duct cleaning</h1>
               <p id="services_content_03" class="w-4/5 text-center text-base text-white leading-relaxed p-2 hidden md:block">
                 Over time, your air ducts can become clogged with dust and 
@@ -241,8 +250,8 @@
               <button id="show_less_btn_03" class="hidden">Show Less</button>
             </div>
             <div id="card" class="w-[100%] flex flex-col items-center">
-              <img class="w-60 h-60" src="images/coolant.jpeg" alt="">
-              <h1 class="w-3/4 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5 ">Coolant refill</h1>
+              <img class="w-80 h-52 mt-5 mb-8 object-cover" src="images/electrical_diagnostics2.jpg" alt="">
+              <h1 class="w-3/4 flex justify-center text-xl text-white text-center uppercase pt-5 pb-5 ">Electrical diagnostics</h1>
               <p id="services_content_04" class="w-4/5 text-center text-base text-white leading-relaxed p-2 hidden md:block">
                 If your air conditioner is not blowing cold air, it may be 
                 low on refrigerant. Our coolant refill services can quickly and 
@@ -257,15 +266,47 @@
         </div>
       </section>
 
+      <section>
+        <!-- Booking -->
+        <div id="booking" data-aos="fade-right" id="contact" class="dark:bg-slate-900">
+          <div class="mx-auto pt-40 pb-40">
+              <!-- top/headind Contact -->
+              <div class="mx-auto w-3/5 flex flex-col justify-center items-center text-center p-5">
+                <h1 class="text-white xl:text-xl lg:text-lg md:text-lg font-bold xl:p-5 xs:p-2">BOOKING</h1>
+                <p class="text-white xl:text-lg lg:text-base md:text-base pb-5">
+                  Please fill out your details below if you would like to book a technician for assistance, 
+                  please leave a short message to assist the technician to better understand what you need. 
+                </p>
+                <p class="text-white xl:text-lg lg:text-base md:text-base pb-5">
+                  Alternatively you can click on the whatsapp icon to message Neil directly.
+                </p>
+              </div>
+              <!-- bottom/form -->
+              <form id="myform" class="mt-5 p-8 flex flex-col gap-5 items-center">
+                  <input id="name" type="text" required class="text-black p-2 xl:w-[35%] md:w-1/2 ring-1 rounded-sm dark:bg-slate-600" placeholder="Name">
+                  <input id="form_contact_number" type="tel" required class="text-black p-2 xl:w-[35%] md:w-1/2 ring-1 rounded-sm dark:bg-slate-600" placeholder="Phone number">
+                  <input id="email" type="email" required class="text-black p-2 xl:w-[35%] md:w-1/2 ring-1 rounded-sm dark:bg-slate-600" placeholder="Email">
+                  <input id="date_picker" type="date" required class="text-black p-2 xl:w-[35%] md:w-1/2 sm:w-full xs:w-full ring-1 rounded-sm dark:bg-slate-600" placeholder="Select date">
+                  <textarea id="message" type="text" required class="text-black p-2 xl:w-[35%] md:w-1/2 ring-1 rounded-sm dark:bg-slate-600" cols="30" rows="10" placeholder="Message..."></textarea>
+                  <button id="contact-btn" type="submit" class="w-1/4 bg-teal-800 text-white font-semibold p-2 rounded-md shadow-xl hover:scale-95 duration-300 hover:bg-teal-900 hover:shadow-sm dark:shadow-slate-800">Submit</button>
+                  <div id="error" class=""></div>
+              </form>
+              <div class="w-12 h-12 mx-auto items-center bg-white text-center rounded-2xl hover:bg-slate-600/50 duration-300">
+                <a href="https://wa.me/27834476897" class="fa fa-whatsapp text-green-500 text-5xl hover:text-custom_yellow duration-300"></a>
+              </div>
+          </div>
+        </div>
+      </section>
+
       <!--Footer-->
-      <section data-aos="fade-right" id="hidden" class="xl:mt-80 xs:mt-40 bg-[#1E2228] pt-10 pb-10">
+      <section id="hidden" class="xl:mt-80 xs:mt-40 bg-[#1E2228] pt-10 pb-10">
 
         <!-- Top -->
         <div id="footer" class="flex xl:flex-row justify-center items-center xl:gap-28 lg:flex-row lg:gap-28 md:flex-row md:gap-10 sm:flex-col sm:gap-10 xs:flex-col xs:gap-0">
           <!-- Left -->
           <!-- Logo -->
           <div class="hidden lg:block w-1/6 h-24 flex justify-center pl-5 pr-5">
-            <a href="#" class="hover:scale-90 duration-300"><img class="xl:w-56 xl:h-28 xs:w-60 xs:ml-5" src="./images/Candey_Logo_Design_Final.png" alt=""></a>
+            <a href="#" class="hover:scale-90 duration-300"><img class="xl:w-64 xl:h-28 xs:w-60 xs:ml-5" src="./images/Candey_Logo_Design_Final.png" alt=""></a>
           </div>
           <!-- Middle -->
           <!-- follow me -->
@@ -284,8 +325,7 @@
                       <a href="https://www.facebook.com/Candeycool" class="fa fa-facebook text-[#255C9D] text-2xl hover:text-custom_yellow duration-300" id="facebook"></a>
                   </div>
                   <div id="footer_circle" class="w-10 h-10 flex justify-center items-center bg-white rounded-full hover:bg-slate-600/50 duration-300">
-                    <a href="https://wa.me/27834476897" class="fa fa-whatsapp text-green-500 text-4xl hover:text-custom_yellow duration-300">
-                    </a>
+                    <a href="https://wa.me/27834476897" class="fa fa-whatsapp text-green-500 text-4xl hover:text-custom_yellow duration-300"></a>
                   </div>
                 </div>
               </div>
@@ -303,15 +343,13 @@
             </div>
           </div>
         </div>
-
-        <!-- Bottom -->
-        <div class="w-full flex justify-center p-10">
-          <p class="xl:text-base lg:text-base md:text-sm sm:text-sm xs:text-sm text-white font-light">
-            © 2023 Candey Cool. All rights reserved.
-          </p>
-        </div>
       </section>
-
+       <!-- Bottom -->
+      <div class="w-full flex justify-center bg-[#1E2228]">
+        <p class="xl:text-base lg:text-base md:text-sm sm:text-sm xs:text-sm text-white font-light">
+          © 2023 Candey Cool. All rights reserved.
+        </p>
+      </div>
     </div>
 	  <script src="app.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
