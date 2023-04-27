@@ -158,5 +158,10 @@ html {
 
 
 #contact-btn {
-  background-color: rgb(17 94 89);
+  /* background-color: rgb(17 94 89); */
+  background-color: #fffd2d;
+}
+
+#contact-btn:hover {
+  background-color: #f5f12a;
 }
