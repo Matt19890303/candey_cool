@@ -207,3 +207,13 @@ booking_form.addEventListener('submit', function(event) {
 
     });
 
+// Placeholder for date picker
+    $(document).ready(function() {
+      $('#date_picker').on('blur', function() {
+        if (!$(this).val()) {
+          $(this).addClass('show-placeholder');
+        }
+      }).on('focus', function() {
+        $(this).removeClass('show-placeholder');
+      });
+    });
