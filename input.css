@@ -83,7 +83,7 @@ html {
 /* ChatGPT */
 .popup {
   position: absolute;
-  padding: 1rem;
+  padding: 10px;
   background-color: #fffd2d;
   color: black;
   border-radius: 0.5rem;
